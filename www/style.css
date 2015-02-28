@@ -1,0 +1,10 @@
+.panel-left li {
+	font-size: 18px;
+	margin: 6px;
+	overflow: auto;
+	list-style: none;
+}
+
+.panel-left .label-switch {
+	float: right;
+}

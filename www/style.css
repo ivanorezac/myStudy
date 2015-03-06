@@ -8,3 +8,23 @@
 .panel-left .label-switch {
 	float: right;
 }
+
+.inline {
+	overflow: hidden;
+}
+
+.inline * {
+	display: inline;
+}
+
+.inline input {
+	height: 40px;
+	border-radius: 5px;
+	width: 50%;
+	float:left;
+}
+
+.inline input[type=submit].button {
+	width: 49%;
+	float:right;
+}

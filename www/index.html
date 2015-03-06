@@ -2,7 +2,11 @@
 <html>
 <head>
     <style>body {
-  background:url('background.jpg');
+  background:url('http://s3images.coroflot.com/user_files/individual_files/original_413719_UzuM_zYhQfs_2aA7rv37C3O7L.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin:0px;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -93,6 +97,9 @@ h1, h2, h3, h4, h5, h6, a {
     margin-bottom:10px;
   }
 }
+  form {
+    display: inline-block;
+  }
     </style>
 </head>
 <body><link href='http://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
@@ -102,16 +109,16 @@ h1, h2, h3, h4, h5, h6, a {
     <h1>myStudy</h1>
   </div>
   <div class="login-form">
-  <form action='dashboard.html'>
-    <h3>Username:</h3>
     <input type="text" placeholder="Username"/><br>
-    <h3>Password:</h3>
-    <input type="password" placeholder="Password"/>
-    <br>
+    <input type="password" placeholder="Password"/><br>
+  <form action='dashboard.html'>
     <input type="submit" value="Login" class="login-button"/>
+  </form>
+  <form action='register.html'>
+     <input type="submit" value="Register" class="login-button"/>
+  </form>
     <br>
     <br>
-    </form>
   </div>
 </div>
 <script>

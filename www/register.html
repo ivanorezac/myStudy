@@ -103,13 +103,6 @@ h1, h2, h3, h4, h5, h6, a {
     margin-bottom:10px;
   }
 }
-  form {
-    display: inline-block;
-  }
-  .chosen-rtl .chosen-drop { left: -9000px; }
-  .chosen-choices {border-radius: 5px;
-border: 2px solid #f2f2f2;
-  }
     </style>
 
 
@@ -123,39 +116,22 @@ border: 2px solid #f2f2f2;
   <div class="login-form">
     <input type="text" placeholder="First name"/><br>
     <input type="text" placeholder="Last name"/><br>
-    <input type="text" placeholder="Email"/><br>
-    <form>
-      <select data-placeholder="Your school" class="chosen-select" multiple style="max-width:100%;" tabindex="4">
-            <option value="United States">Gimnazija "Sveti Sava"</option>
-            <option value="United States">Medicinska skola</option>
-            <option value="United States">ETS "Nikola Tesla"</option>
-            <option value="United States">OS "P.P. Njegos"</option>
-            <option value="United States">Elektrotehicki fakultet</option>
-            <option value="United States">Univerzitet Metropolitan</option>
-      </select>
-  </form>
-  <form>
-      <select data-placeholder="Your status" class="chosen-select" multiple style="max-width:100%;" tabindex="4">
-            <option value="United States">Student</option>
-            <option value="United States">Teacher</option>
-            <option value="United States">Dean</option>
-      </select>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
-  <script src="chosen.jquery.js" type="text/javascript"></script>
-  <script src="docsupport/prism.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript">
-    var config = {
-      '.chosen-select'           : {},
-      '.chosen-select-deselect'  : {allow_single_deselect:true},
-      '.chosen-select-no-single' : {disable_search_threshold:10},
-      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-      '.chosen-select-width'     : {width:"95%"}
-    }
-    for (var selector in config) {
-      $(selector).chosen(config[selector]);
-    }
-  </script>
-  </form><br><br>
+    <input type="text" placeholder="Email"/><br><br>
+    <h3>School:</h3>
+<select style="width:50%; background-color:#ffffff; border: 2px solid #f2f2f2; height: 30px;">
+      <option>Gimnazija "Sveti Sava"</option>
+      <option>Medicinska skola</option>
+      <option>ETS "Nikola Tesla"</option>
+      <option>OS "P.P. Njegos"</option>
+      <option>Elektrotehicki fakultet</option>
+      <option>Univerzitet Metropolitan</option>
+</select><br><br>
+    <h3>Status:</h3>
+<select style="width:50%; background-color:#ffffff; border: 2px solid #f2f2f2; height: 30px; margin-left: 4px;">
+      <option>Student</option>
+      <option>Teacher</option>
+</select>
+      <br><br>
   <form action='dashboardteacher.html'>
      <input type="submit" value="Finish" class="login-button"/>
   </form>

@@ -20,11 +20,11 @@
 .inline input {
 	height: 40px;
 	border-radius: 5px;
-	width: 50%;
+	width: 45%;
 	float:left;
 }
 
 .inline input[type=submit].button {
-	width: 49%;
+	width: 45%;
 	float:right;
 }
